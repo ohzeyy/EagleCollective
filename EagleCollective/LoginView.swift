@@ -38,7 +38,7 @@ struct LoginView: View {
                     .scaledToFit()
                     .padding(.horizontal)
                 
-                Text("Please sign in using your BC email.")
+                Text("Please use your BC email.")
                     .foregroundColor(.white)
                     .font(.title3)
                     .bold()

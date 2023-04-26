@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct HomescreenView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         ZStack {
             
@@ -19,72 +22,86 @@ struct HomescreenView: View {
                         .scaledToFill()
                         .ignoresSafeArea()
                 )
-            
             VStack {
+                
+                HStack {
+                    Button("SIGN OUT") {
+                        do {
+                            try Auth.auth().signOut()
+                            print("🪵➡️ Log out successful!")
+                            dismiss()
+                        } catch {
+                            print("😡 ERROR: Could not sign out!")
+                        }
+                    }
+                    .font(.caption)
+                    .fontWeight(.black)
+                    .tint(.white.opacity(0.75))
+                    .padding(.horizontal, 4)
+                    
+                    Spacer()
+                }
+                .padding(.horizontal)
+                
+                Spacer()
                 
                 Image("logo")
                     .resizable()
                     .scaledToFit()
-                    .padding()
+                    .padding(.horizontal)
                 
                 Group {
                     Button("NEW RELEASES") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                     
                     Button("UPCOMING CONCERTS") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                     
                     Button("SPOTIFY PLAYLIST") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                     
                     Button("SONGS") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                     
                     Button("ARTISTS") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                     
                     Button("ABOUT") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                     
                     Button("CONTACT") {
                         // TODO: add view
                     }
                     .fontWeight(.black)
-                    .tint(.white)
                     .padding()
                 }
                 .font(.title)
-
-            }
-            .padding()
-            
+                .tint(.white.opacity(0.95))
                 
-            
+                Spacer()
+            }
         }
+        
+        
+        
     }
 }
 
