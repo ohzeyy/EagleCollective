@@ -72,8 +72,10 @@ struct LoginView: View {
                             enableButtons()
                         }
                 }
+                .preferredColorScheme(.light)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal)
+                
                 
                 HStack {
                     Button {

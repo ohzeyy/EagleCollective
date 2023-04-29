@@ -20,6 +20,15 @@
 		9FA6215729F86E6D007FBFC5 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA6215629F86E6D007FBFC5 /* SpotifyiOS.framework */; };
 		9FA6217F29F8E111007FBFC5 /* ArtistsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6217E29F8E111007FBFC5 /* ArtistsListView.swift */; };
 		9FA6218129F8E1E1007FBFC5 /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6218029F8E1E1007FBFC5 /* ArtistsViewModel.swift */; };
+		9FA6218329F9E31C007FBFC5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6218229F9E31C007FBFC5 /* Artist.swift */; };
+		9FA6218529F9E7CA007FBFC5 /* ArtistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6218429F9E7CA007FBFC5 /* ArtistDetailView.swift */; };
+		9FA6218729F9F4F2007FBFC5 /* AlbumCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6218629F9F4F2007FBFC5 /* AlbumCover.swift */; };
+		9FA6218B29FA01EF007FBFC5 /* KeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6218A29FA01EF007FBFC5 /* KeyViewModel.swift */; };
+		9FA6218D29FA6F91007FBFC5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6218C29FA6F91007FBFC5 /* AboutView.swift */; };
+		9FA621A029FB62E3007FBFC5 /* SpotifyPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6219F29FB62E3007FBFC5 /* SpotifyPlaylistView.swift */; };
+		9FA621A229FB6688007FBFC5 /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA621A129FB6688007FBFC5 /* Concert.swift */; };
+		9FA621A429FB66CC007FBFC5 /* ConcertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA621A329FB66CC007FBFC5 /* ConcertViewModel.swift */; };
+		9FA621A629FB6787007FBFC5 /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA621A529FB6787007FBFC5 /* ConcertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +42,16 @@
 		9FA6215629F86E6D007FBFC5 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		9FA6217E29F8E111007FBFC5 /* ArtistsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListView.swift; sourceTree = "<group>"; };
 		9FA6218029F8E1E1007FBFC5 /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
+		9FA6218229F9E31C007FBFC5 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		9FA6218429F9E7CA007FBFC5 /* ArtistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailView.swift; sourceTree = "<group>"; };
+		9FA6218629F9F4F2007FBFC5 /* AlbumCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCover.swift; sourceTree = "<group>"; };
+		9FA6218A29FA01EF007FBFC5 /* KeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyViewModel.swift; sourceTree = "<group>"; };
+		9FA6218C29FA6F91007FBFC5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		9FA6218E29FA7828007FBFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FA6219F29FB62E3007FBFC5 /* SpotifyPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaylistView.swift; sourceTree = "<group>"; };
+		9FA621A129FB6688007FBFC5 /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
+		9FA621A329FB66CC007FBFC5 /* ConcertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertViewModel.swift; sourceTree = "<group>"; };
+		9FA621A529FB6787007FBFC5 /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +89,16 @@
 		9FA6213A29F8490C007FBFC5 /* EagleCollective */ = {
 			isa = PBXGroup;
 			children = (
+				9FA6218E29FA7828007FBFC5 /* Info.plist */,
 				9FA6213B29F8490C007FBFC5 /* EagleCollectiveApp.swift */,
-				9FA6213D29F8490C007FBFC5 /* HomescreenView.swift */,
-				9FA6215429F85782007FBFC5 /* LoginView.swift */,
-				9FA6217E29F8E111007FBFC5 /* ArtistsListView.swift */,
-				9FA6218029F8E1E1007FBFC5 /* ArtistsViewModel.swift */,
+				9FC0F28829FC92A600A49538 /* MainScreens */,
+				9FC0F27F29FC91FD00A49538 /* NewReleases */,
+				9FC0F28229FC926800A49538 /* UpcomingConcerts */,
+				9FC0F28329FC927900A49538 /* SpotifyPlaylist */,
+				9FC0F28429FC928200A49538 /* Songs */,
+				9FC0F28529FC928B00A49538 /* Artists */,
+				9FC0F28629FC929400A49538 /* About */,
+				9FA6218A29FA01EF007FBFC5 /* KeyViewModel.swift */,
 				9FA6213F29F8490E007FBFC5 /* Assets.xcassets */,
 				9FA6214929F8550D007FBFC5 /* GoogleService-Info.plist */,
 				9FA6215629F86E6D007FBFC5 /* SpotifyiOS.framework */,
@@ -89,6 +113,67 @@
 				9FA6214229F8490E007FBFC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FC0F27F29FC91FD00A49538 /* NewReleases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewReleases;
+			sourceTree = "<group>";
+		};
+		9FC0F28229FC926800A49538 /* UpcomingConcerts */ = {
+			isa = PBXGroup;
+			children = (
+				9FA621A129FB6688007FBFC5 /* Concert.swift */,
+				9FA621A329FB66CC007FBFC5 /* ConcertViewModel.swift */,
+				9FA621A529FB6787007FBFC5 /* ConcertView.swift */,
+			);
+			path = UpcomingConcerts;
+			sourceTree = "<group>";
+		};
+		9FC0F28329FC927900A49538 /* SpotifyPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6219F29FB62E3007FBFC5 /* SpotifyPlaylistView.swift */,
+			);
+			path = SpotifyPlaylist;
+			sourceTree = "<group>";
+		};
+		9FC0F28429FC928200A49538 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		9FC0F28529FC928B00A49538 /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6218229F9E31C007FBFC5 /* Artist.swift */,
+				9FA6218629F9F4F2007FBFC5 /* AlbumCover.swift */,
+				9FA6218029F8E1E1007FBFC5 /* ArtistsViewModel.swift */,
+				9FA6217E29F8E111007FBFC5 /* ArtistsListView.swift */,
+				9FA6218429F9E7CA007FBFC5 /* ArtistDetailView.swift */,
+			);
+			path = Artists;
+			sourceTree = "<group>";
+		};
+		9FC0F28629FC929400A49538 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6218C29FA6F91007FBFC5 /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		9FC0F28829FC92A600A49538 /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6215429F85782007FBFC5 /* LoginView.swift */,
+				9FA6213D29F8490C007FBFC5 /* HomescreenView.swift */,
+			);
+			path = MainScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +256,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA6218329F9E31C007FBFC5 /* Artist.swift in Sources */,
+				9FA6218B29FA01EF007FBFC5 /* KeyViewModel.swift in Sources */,
+				9FA621A429FB66CC007FBFC5 /* ConcertViewModel.swift in Sources */,
+				9FA6218529F9E7CA007FBFC5 /* ArtistDetailView.swift in Sources */,
 				9FA6215529F85782007FBFC5 /* LoginView.swift in Sources */,
+				9FA6218D29FA6F91007FBFC5 /* AboutView.swift in Sources */,
+				9FA6218729F9F4F2007FBFC5 /* AlbumCover.swift in Sources */,
 				9FA6217F29F8E111007FBFC5 /* ArtistsListView.swift in Sources */,
+				9FA621A629FB6787007FBFC5 /* ConcertView.swift in Sources */,
 				9FA6218129F8E1E1007FBFC5 /* ArtistsViewModel.swift in Sources */,
+				9FA621A229FB6688007FBFC5 /* Concert.swift in Sources */,
 				9FA6213E29F8490C007FBFC5 /* HomescreenView.swift in Sources */,
 				9FA6213C29F8490C007FBFC5 /* EagleCollectiveApp.swift in Sources */,
+				9FA621A029FB62E3007FBFC5 /* SpotifyPlaylistView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +405,9 @@
 					"$(PROJECT_DIR)/EagleCollective",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EagleCollective/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -345,9 +439,9 @@
 					"$(PROJECT_DIR)/EagleCollective",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EagleCollective/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
